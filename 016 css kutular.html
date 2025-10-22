@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Kutular</title>
+    <style>
+         .kutu{
+             width: 100px; /* genişlik*/
+             height: 100px; /* yükseklik*/
+             float:left; /* Sola hizalar */
+             color: #FFF; /* Yazı rengi: beyaz*/
+             text-align: center; /* Metni ortalar */
+             margin: 10px; /* Dış boşluk Dört bir taraftan 10px boşluk oluşturur*/
+             line-height: 100px; /* Satır yüksekliği*/
+             padding:20px; /* İç boşluk */
+             font-size:15px;
+         }   
+         .kutu:hover{ /* fareyi üzerine getirince yapılacak*/
+             background-color: gray;
+             font-size: 20px;
+         }
+
+         .mavi{ background-color: blue;}
+         .kirmizi{background-color:red;}
+         .yesil{background-color: green;}
+    </style>
+</head>
+<body>
+        <div class="kutu mavi"> Kutu 1</div>
+        <div class="kutu kirmizi"> Kutu 2</div>
+        <div class="kutu yesil">Kutu 3</div>
+</body>
+</html>

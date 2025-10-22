@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout</title>
+    <style>
+        *{
+            font-size:30px;
+            color:#FFF; 
+            text-align:center;
+            font-family: Arial;
+        }
+        #container{
+            width: 1000px;
+            height: 1500px;
+            background-color: gray;
+            margin:0 auto;
+        }
+        #banner{
+            width: 1000px;
+            height: 150px;
+            background-color: blueviolet;         
+            line-height: 150px;
+        }
+        #content{
+            width: 1000px;
+            height: 1150px;
+            background-color:green;
+        }
+        #leftside{
+            width: 200px;
+            height:1150px;
+            background-color: rgb(165, 41, 61);
+            float:left;
+        }
+        #contentcenter{
+            width: 600px;
+            height: 1150px;
+            background-color: rgb(6, 116, 116);
+            float:left;
+        }
+        #rightside{
+            width: 200px;
+            height: 1150px;
+            background-color: blue;
+            float:left;
+        }
+        #footer{
+            width: 1000px;
+            height: 200px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"><!--Container başlangıç-->
+        <div id="banner">  Üst taraf(Banner) </div>
+         <div id="content"><!-- content başlangıç-->
+            <div id="leftside"> Sol Taraf</div>
+            <div id="contentcenter">
+                
+                <img src="manzara.webp">  <br>
+                
+                <!-- video ekleme -->
+                <video controls poster="images/arkaplan.JPG" width="300px">
+                    <source src="media/lab1.mp4" type="video/mp4">
+                </video>
+
+                <video controls poster="images/arkaplan.JPG" width="300px">
+                    <source src="media/lab2.mp4" type="video/mp4">
+                </video>
+
+                <video controls poster="images/arkaplan.JPG" width="300px">
+                    <source src="media/lab3.mp4" type="video/mp4">
+                </video>
+                <!-- Video ekleme-->
+
+                <!-- Müzik Ekleme -->
+                 <audio controls autoplay loop>
+                    <source src="media/muzik.mp3" type="audio/mpeg">
+                    Tarayıcınız ses (audio) ögesini desteklemiyor.
+                </audio>
+                <!-- Müzik ekle-->
+
+            </div>
+            <div id="rightside">Sağ Taraf</div>
+         </div><!-- CONTENT bitiş-->
+         <div id="footer">ALT KISIM</div>
+    </div><!-- Container(Taşıyıcı) bitiş-->
+</body>
+</html>

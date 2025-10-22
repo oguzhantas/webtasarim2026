@@ -1,0 +1,13 @@
+gov (government) : Devlet kurumları
+edu (education) : Eğitim kurumları
+k12 (kindergarten 12) : Temel eğitim ve ortaöğretim
+kurumları
+org (organization) : Ticari olmayan kuruluşlar
+com (company) : Ticari kuruluşlar
+mil (military) : Askerî kurumlar
+
+
+WWW = GENİŞ DÜNYA AGI
+İSS = İNTERNET SERVİS SAGLIYICI 
+IP = İNTERNET PROTOCAL
+TCP/IP = KONTROLLÜ İLETİŞİM PTOTOKOLÜ ( İNTERNETİN ALT YAPISINI OLUSTURMA)

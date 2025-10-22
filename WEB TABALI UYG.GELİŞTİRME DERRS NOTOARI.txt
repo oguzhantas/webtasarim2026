@@ -1,0 +1,20 @@
+HOSTİNG = BARINDIRMA HİZMETLERİ **** SINAV 
+DOMAİN NAME = ALAN ADI**** SINAV
+WWW = GENİŞ DÜNYA AGI*** SINAV
+İSS = İNTERNET SERVİS SAGLIYICI *** SINAV
+IP = İNTERNET PROTOCAL***SINAV 
+TCP/IP = KONTROLLÜ İLETİŞİM PTOTOKOLÜ ( İNTERNETİN ALT YAPISINI OLUSTURMA) ****** SINAV
+
+
+gov (government) : Devlet kurumları*****SINAV
+edu (education) : Eğitim kurumları****SINAV
+k12 (kindergarten 12) : Temel eğitim ve ortaöğretim***SINAV
+kurumları***SINAV
+org (organization) : Ticari olmayan kuruluşlar***SINAV
+com (company) : Ticari kuruluşlar*****SINAV
+mil (military) : Askerî kurumlar*** SINAV
+net (network) : Servis sunucular
+ac (academic) : Akademik kuruluşlar
+int (international) : Uluslararası kuruluşlar
+info (information) : Bilgi içerikli web siteleri
+biz (business) : Ticari kuruluşlar
