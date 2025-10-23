@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yatay Menü </title>
+    <style>
+        .yataymenu{
+            width: 100%;
+            background-color: blue;
+            color:#FFF;
+            height: 70px;
+            line-height: 50px; /*Satır yüksekliği*/
+            font-family: Tahoma; /* font tipi*/
+            font-size:20px; /* font büyüklüğü*/
+            text-shadow: 2px 2px #000; /* Yazıya Gölge Ekleme*/
+        }
+        .yataymenu li{
+            display: inline-block;/* Yatay hale getirir*/
+            margin-left: 10px; /* soldan dış boşluk 10px*/
+            cursor: pointer; /* fare imlecini el şekline çevirir*/
+            /*background-color: red;*/
+            padding:10px;
+        }
+        .yataymenu a{
+            text-decoration: none; /* link altının çizilmesi iptal eder*/
+            color:#FFF;
+        }
+        .yataymenu li:hover{ 
+            /*Menu seçenekleri üzerine fare ile gelince renk değişimi*/
+            background-color: rgb(211, 38, 38);
+            color: yellow;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <ul class="yataymenu">
+        <li> <a href="index.html">Ana Sayfa</a> </li>
+        <li> <a href="hakkimizda.html">Hakkımızda</a> </li>
+        <li> <a href="urunler.html">Ürünler</a> </li>
+        <li> <a href="iletisim.html">İletişim</a> </li>
+    </ul>
+
+   
+</body>
+</html>

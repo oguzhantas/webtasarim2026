@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutu</title>
+    <style>
+        #kutu{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            color:#FFF;
+            text-align: center;
+            line-height: 100px;
+            box-shadow: 5px 5px #000;
+            margin:10px;
+            float:left; /* Sola hizalayarak yan yana gelmesini sağlar*/
+        }
+        #kutu a{
+            text-decoration: none; color:#FFF;
+        }
+        #kutu:hover{
+            background-color: blue;
+            box-shadow: 8px 8px rgb(172, 160, 160);
+            font-size: 15px;
+        }
+        #daire{
+            width: 100px;
+            height: 100px;
+            line-height: 100px; /*Dikeyde ortalar*/
+            border-radius: 100px;
+           /* background-color: tomato;*/
+            background: linear-gradient(tomato, maroon);
+            text-align: center;
+            margin:10px; /* Her yönden dış boşluk 10px*/
+            font-size: 20px;
+            font-weight: bold; /*Yazıyı kalınlaştır*/
+            color:#FFF;
+            box-shadow: 5px 5px gray;
+            float:left;
+        }
+        #daire:hover{
+            cursor: pointer; /*Fare, el şeklini alır*/
+            background: linear-gradient(maroon, tomato);
+        }
+
+        #kareyuvarlatilmis{
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+           /* background-color: rgb(7, 99, 68);*/
+            background: linear-gradient(green, yellowgreen);
+            border-radius: 20px;
+            border: 5px solid gold;
+            float:left;
+            text-align: center;
+            color:#FFF;
+            font-family: Verdana;
+            text-shadow: 2px 2px #000;
+            font-weight: bold;
+
+        }
+        #kareyuvarlatilmis:hover{
+            border: 5px solid rgb(133, 27, 27);
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="kutu">
+        <a href="http://www.google.com">Google</a>
+    </div>
+    <div id="kutu">
+        <a href="http://www.yahoo.com">Yahoo</a>
+    </div>
+    
+    <div id="daire">Daire 1</div>
+    <div id="kareyuvarlatilmis">Kare</div>
+</body>
+</html>

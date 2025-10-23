@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Formu</title>
+</head>
+<body>
+    <form action=""> <!-- Form Başlangıç-->
+<!-- 
+    required: Mutlaka doldurulması gereken alan
+    readonly: sadece okunabilir, bilgi yazılamaz alan
+    autocomplete: Otomatik tamamlama off durumunda kapanır
+    placeholder: Açıklama bilgisi verir.
+    maxlength: Bir text'e girilecek maks. karakter sayısı
+-->
+        <table border="1" align="center">
+                <!-- Başlık -->
+                <tr>
+                    <td colspan="2" align="center"> 
+                        <b> Üye Kayıt <b>
+                    </td>
+                </tr>
+                <!-- Adı -->
+                <tr>
+                    <td> <label for="adi">Adı </label></td>
+                    <td> <input type="text" name="adi" id="adi" maxlength="25" required></td>
+                </tr>
+                <!-- soyadi -->
+                <tr>
+                    <td> <label for="soyadi">Soyadı </label></td>
+                    <td><input type="text" name="soyadi" id="soyadi" maxlength="30" required></td>
+                </tr>
+                <!--Kullanıcı -->
+                <tr>
+                    <td>Kullanıcı </td>
+                    <td><input type="text" name="kullanici" id="kullanici" 
+                        required placeholder="en az 6 karakter"></td>
+                </tr>
+                <!-- Şifre -->
+                <tr>
+                    <td>Şifre </td>
+                    <td><input type="password" name="sifre" id="sifre" required></td>
+                </tr>
+                <!-- Cinsiyet-->
+                <tr>
+                    <td>Cinsiyet</td>
+                    <td>
+                        <input type="radio" name="cinsiyet" id="erkek" checked>Erkek
+                        <input type="radio" name="cinsiyet" id="kadin">Kadın
+                    </td>
+                </tr>
+                <!-- Gelir Durumu-->
+                <tr>
+                    <td>Gelir Durumu</td>
+                    <td>
+                        <input type="range" name="gelir" id="gelir" 
+                        min="24" max="250" step="5">
+                    </td>
+                </tr>
+                <!-- Hobiler-->
+                <tr>
+                    <td>Hobileriniz</td>
+                    <td>
+                        <input type="checkbox" name="kitap" id="kitap" checked>kitap
+                        <input type="checkbox" name="sinema" id="sinema">sinema
+                        <input type="checkbox" name="tiyatro" id="tiyatro">tiyatro
+                    </td>
+                </tr>
+                <!-- Doğum Yeri -->
+                <tr>
+                    <td>Doğum Yeri</td>
+                    <td>
+                        <select name="dyeri" id="dyeri">
+                            <option value="izmir">İzmir</option>
+                            <option value="istanbul">İstanbul</option>
+                            <option value="Elazığ" selected>Elazığ</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- Doğum Tarihi-->
+                <tr>
+                    <td>Doğum Tarihi</td>
+                    <td>
+                        <input type="date" name="dtarihi" id="dtarihi">
+                    </td>
+                </tr>
+                <!-- Telefon -->
+                <tr>
+                    <td>Telefon</td>
+                    <td><input type="number" name="telefon" id="telefon"
+                        placeholder="10 hane giriniz" max="10"
+                        value="05"
+                        ></td>
+                </tr>
+                <!-- e-posta -->
+                <tr>
+                    <td>E-posta</td>
+                    <td><input type="email" name="eposta" id="eposta"> </td>
+                </tr>
+                <!--Renk seçimi-->
+                <tr>
+                    <td>Sevdiğiniz Renk</td>
+                    <td>
+                        <input type="color" name="renk" id="renk">
+                    </td>
+                </tr>
+                <!-- Diğer Bilgiler-->
+                <tr>
+                    <td>Diğer Bilgiler</td>
+                    <td>
+                        <textarea name="diger" id="diger" cols="30" rows="5">
+                        </textarea>
+                    </td>
+                </tr>
+                <!-- Saat nesnesi-->
+                <tr>
+                    <td>Uyanma saatiniz</td>
+                    <td>
+                        <input type="time" name="zaman" id="zaman">
+                    </td>
+                </tr>
+                <!-- Web Siteniz-->
+                <tr>
+                    <td>Web Siteniz</td>
+                    <td>
+                        <input type="url" name="websitesi" id="websitesi">
+                    </td>
+                </tr>
+                <!-- File Nesnesi ile Dosya Yükleme -->
+                <tr>
+                    <td>CV Yükleyiniz</td>
+                    <td>
+                        <input type="file" name="cv" id="cv">
+                    </td>
+                </tr>
+        
+                <!-- Kaydet-->
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Formu Kaydet">
+                        <input type="reset" value="Temizle">
+                    </td>
+                </tr>
+        </table>
+       
+    </form><!-- Form Bitişi-->
+    
+</body>
+</html>
