@@ -1,0 +1,26 @@
+.yataymenu{
+    width: 1160px;
+    background-color: blue;
+    color:#FFF;
+    height: 70px;
+    line-height: 50px; /*Satır yüksekliği*/
+    font-family: Tahoma; /* font tipi*/
+    font-size:20px; /* font büyüklüğü*/
+    text-shadow: 2px 2px #000; /* Yazıya Gölge Ekleme*/
+}
+.yataymenu li{
+    display: inline-block;/* Yatay hale getirir*/
+    margin-left: 10px; /* soldan dış boşluk 10px*/
+    cursor: pointer; /* fare imlecini el şekline çevirir*/
+    /*background-color: red;*/
+    padding:10px;
+}
+.yataymenu a{
+    text-decoration: none; /* link altının çizilmesi iptal eder*/
+    color:#FFF;
+}
+.yataymenu li:hover{ 
+    /*Menu seçenekleri üzerine fare ile gelince renk değişimi*/
+    background-color: rgb(211, 38, 38);
+    color: yellow;
+}
