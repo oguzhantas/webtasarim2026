@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasarım 3</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <style>
+    /*
+      mt-0 // Margin Top 0
+      mb-0 // Margin Bottom 0
+      ml-0 // Margin Left 0
+      mr-0 // Margin Right 0
+
+      mx- 0 // Margin 0 in the horizontal ( left and right )
+      my- 0 // Margin 0 in the vertical ( top and bottom )
+
+      Boşlukları kaldırmak için no-gutters ekliyoruz
+      <div class="row no-gutters">
+  */
+    h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+
+    }
+
+    .banner {
+      background-color: blueviolet;
+      color: #FFF;
+      height: 150px;
+      text-align: center;
+    }
+
+    .slide-left {
+      background-color: rgb(223, 133, 24);
+      text-align: center;
+      /*height: 350px;*/
+    }
+
+    .slide-right {
+      background-color: blue;
+      text-align: center;
+      /* height: 350px;*/
+    }
+
+    .navmenu {
+      background-color: rgb(96, 17, 170);
+      /*height: 30px;*/
+      color: #FFF;
+      padding: 0px;
+      /* yeni eklendi */
+    }
+
+    .content-left {
+      background-color: gray;
+      height: 500px;
+      color: #FFF;
+    }
+
+    .content-right {
+      background-color: rgb(97, 92, 92);
+      height: 500px;
+      color: #FFF;
+    }
+
+    .sss {
+      background-color: rgb(97, 94, 94);
+      color: #FFF;
+      height: 300px;
+
+    }
+
+    .footer {
+      height: 250px;
+      background-color: rgb(76, 27, 122);
+      color: #FFF;
+    }
+
+    .navbar-renk {
+      background-color: rgb(88, 18, 153);
+    }
+
+    .navbar-renk2 {
+      background-color: rgb(122, 22, 214);
+    }
+
+    .mavi {
+      background-color: blue;
+    }
+
+    .yesil {
+      background-color: green;
+    }
+
+    .kirmizi {
+      background-color: red;
+    }
+
+    .sari {
+      background-color: rgb(207, 207, 0);
+    }
+
+    .mor {
+      background-color: purple;
+    }
+
+    .siyah {
+      background-color: black;
+    }
+
+    .acikmavi {
+      background-color: rgb(26, 151, 192);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-renk" data-bs-theme="dark"><!-- navbar başlangıç-->
+    <div class="container">
+      <a class="navbar-brand" href="#">ABC Yazılım</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- ana Sayfa-->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Ana Sayfa</a>
+          </li>
+          <!-- Hakkımızda-->
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="hakkimizda.html">Hakkımızda</a>
+          </li>
+          <!-- İletişim -->
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="iletisim.html">İletişim</a>
+          </li>
+
+        </ul>
+        <!-- Arama kısmı -->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Aranacak bilgi..." aria-label="Search" />
+          <button class="btn btn-secondary" type="submit">Ara</button>
+        </form>
+        <!-- Arama kısmı bitiş-->
+      </div>
+    </div>
+  </nav> <!-- nav bar bitiş-->
+  <!-- navbar -->
+
+  <div class="container"><!-- container başlangıç -->
+
+    <!-- 1. SATIR -->
+    <div class="row">
+      <!-- banner 12 birim-->
+      <div class="banner col-md-12">
+        Banner burada yer alacak
+      </div>
+    </div>
+
+    <!-- 2. SATIR -->
+    <div class="row no-gutters">
+      <!-- sol slide başla-->
+      <div class="col-md-9 col-xs-12 slide-left p-0">
+        <div id="slide-1" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slide-1" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#slide-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/slide_sol1.jpg" class="d-block w-100 mx-0" alt="Resim 1">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>İlk Slayt</h5>
+                <p>İlk slayt hakkında açıklama.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/slide_sol2.jpg" class="d-block w-100 mx-0" alt="Resim 2">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>İkinci Slayt</h5>
+                <p>İkinci Slayt hakkında.</p>
+              </div>
+            </div>
+
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#slide-1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Önceki</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slide-1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Sonraki</span>
+          </button>
+        </div>
+
+      </div>
+      <!-- sol slide bitiş-->
+      <!-- sağ slide başlangıç-->
+      <div class="col-md-3 col-xs-12 slide-right p-0">
+        <div id="slide-2" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slide-2" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#slide-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/slide_sag1.jpg" class="d-block w-100" alt="Resim 1">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>İlk Slayt</h5>
+                <p>İlk slayt hakkında açıklama.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/slide_sag2.jpg" class="d-block w-100" alt="Resim 2">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>İkinci Slayt</h5>
+                <p>İkinci Slayt hakkında.</p>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#slide-2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Önceki</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slide-2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Sonraki</span>
+          </button>
+        </div>
+
+      </div>
+      <!-- sağ slide bitiş-->
+    </div>
+    <!-- 2.SATIR BİTİŞ-->
+
+    <!-- 3. SATIR -->
+    <div class="row">
+
+    </div>
+    <!-- 4. SATIR-->
+    <div class="row">
+    </div>
+
+    <!--5. SATIR-->
+    <div class="row">
+      <div class="col-md-9 content-left">9 birim sol taraf</div>
+      <div class="col-md-3 content-right">3 birim sağ taraf</div>
+    </div>
+
+    <!-- 6. SATIR SIKÇA SORULAN SORULAR -->
+    <div class="row sss">
+      <div class="col-md-12">
+        <h3>Sıkça Sorulan Sorular (SSS) </h3>
+        <!-- Accordion eklenecek-->
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne">
+                <strong>Özel yazılım geliştirme yapıyor musunuz?</strong>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                Windows Masaüstü, Web Programlama ve Mobil Uygulamalar geliştirmekteyiz. C# ile masaüstü uygulamalar,
+                HTML,CSS, JavaScript, Jquery ile Web Tasarım, React Native ile Mobil Uygulamalar geliştirilmektedir.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo">
+                Teknik destek veriyor musunuz?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Geliştirilen yazılımların teknik desteği Pazar hariç haftanın 6 günü verilmektedir.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree">
+                Sizinle nasıl iletişim kurabilirim?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                0545 777 77 77 numaralı telefondan ulaşabilirsiniz.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Accordion bitiş-->
+      </div>
+
+    </div>
+    <!--7. SATIR-->
+    <div class="row">
+      <!-- Footer başlangıç-->
+      <div class="col-md-12 footer">
+        <div class="row">
+          <div class="col-md-3 mavi">
+            <ul>
+              <li>Ana Sayfa</li>
+              <li>Hakkımda</li>
+              <li>Projelerim</li>
+              <li>İletişim</li>
+            </ul>
+          </div>
+          <div class="col-md-3 kirmizi">
+            <h5>Sosyal Medya</h5>
+            <ul>
+              <li>Instagram</li>
+              <li>WhatsApp</li>
+              <li>Youtube</li>
+              <li>X (Twitter)</li>
+              <li>FaceBook</li>
+            </ul>
+          </div>
+          <div class="col-md-3 yesil">
+            <h5>En çok okunan makaleler</h5>
+            <ul>
+              <li>Makale 1</li>
+              <li>Makale 2</li>
+              <li>Makale 3</li>
+            </ul>
+          </div>
+          <div class="col-md-3 acikmavi">
+            <h5>Adres</h5>
+            ABC Mah. <br>
+            ABC Cad. <br>
+            Beylikdüzü İSTANBUL
+          </div>
+        </div>
+
+      </div>
+      <!-- Footer bitiş -->
+    </div>
+  </div><!-- container bitiş -->
+
+</body>
+
+</html>

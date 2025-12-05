@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasarım 3</title>
+    <link rel="stylesheet" href="css/bootstrap.css"> 
+    <script src="js/bootstrap.bundle.min.js"></script>
+     <style>
+         .banner{
+             background-color: blueviolet;
+             color:#FFF;
+             height: 150px;
+             text-align: center;
+         }
+         .navmenu{
+             background-color: rgb(96, 17, 170);
+             /*height: 30px;*/
+             color:#FFF;
+             padding:0px; /* yeni eklendi */
+         }
+         .content-left{
+             background-color: gray;
+             height: 500px;
+             color:#FFF;
+         }
+         .content-right{
+             background-color: rgb(97, 92, 92);
+             height: 500px;
+             color:#FFF;
+         }
+         .footer{
+             height: 250px;
+             background-color: rgb(76, 27, 122);
+             color:#FFF;
+         }
+         .navbar-renk{
+            background-color: rgb(88, 18, 153); 
+         }
+         .navbar-renk2{
+            background-color: rgb(122, 22, 214); 
+         }
+         .mavi {background-color: blue;}
+        .yesil{background-color: green;}
+        .kirmizi{background-color: red;}
+        .sari{background-color: rgb(207, 207, 0);}
+        .mor{ background-color: purple;}
+        .siyah{background-color: black;}
+        .acikmavi{background-color: rgb(26, 151, 192);}
+     </style>
+</head>
+<body>
+
+                  <!-- navbar -->
+                  <nav class="navbar navbar-expand-lg navbar-renk" data-bs-theme="dark"><!-- navbar başlangıç-->
+                    <div class="container">
+                 
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- ana Sayfa-->
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="webtasarim.html">Web Tasarımı</a>
+                        </li>
+                        <!-- Hakkımızda-->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="mobiluygulama.html">Mobil Uygulama</a>
+                        </li>
+                        <!-- İletişim -->   
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="ozelyazilim.html">Özel Yazılım</a>
+                        </li>
+                        
+                        </ul>
+                        <!-- Arama kısmı -->
+                        <form class="d-flex" role="search">
+                            
+                            <button class="btn btn-success" type="submit">Mesaj</button>
+                        </form>
+                        <!-- Arama kısmı bitiş-->
+                    </div>
+                    </div>
+                </nav> <!-- nav bar bitiş-->
+                <!-- navbar -->
+
+    <div class="container"><!-- container başlangıç -->
+
+        <!-- 1. SATIR -->
+        <div class="row">
+            <!-- banner 12 birim-->
+            <div class="banner col-md-12">
+                Banner burada yer alacak
+            </div>
+        </div>
+
+        <!-- 2. SATIR -->
+        <div class="row">
+            <div class="navmenu col-md-12">
+                                  <!-- navbar -->
+                                  <nav class="navbar navbar-expand-lg navbar-renk2" data-bs-theme="dark"><!-- navbar başlangıç-->
+                                    <div class="container">
+                                    <a class="navbar-brand" href="#">ABC Yazılım</a>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <!-- ana Sayfa-->
+                                            <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="index.html">Ana Sayfa</a>
+                                        </li>
+                                        <!-- Hakkımızda-->
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page" href="hakkimizda.html">Hakkımızda</a>
+                                        </li>
+                                        <!-- İletişim -->   
+                                        <li class="nav-item">
+                                            <a class="nav-link" aria-current="page" href="iletisim.html">İletişim</a>
+                                        </li>
+                                        
+                                        </ul>
+                                        <!-- Arama kısmı -->
+                                        <form class="d-flex" role="search">
+                                            <input class="form-control me-2" type="search" placeholder="Aranacak bilgi..." aria-label="Search"/>
+                                            <button class="btn btn-secondary" type="submit">Ara</button>
+                                        </form>
+                                        <!-- Arama kısmı bitiş-->
+                                    </div>
+                                    </div>
+                                </nav> <!-- nav bar bitiş-->
+                                <!-- navbar -->
+
+            </div>
+        </div>
+        <!--3. SATIR-->
+        <div class="row">
+            <div class="col-md-9 content-left">9 birim sol taraf</div>
+            <div class="col-md-3 content-right">3 birim sağ taraf</div>
+        </div>
+        <!--4. SATIR-->
+        <div class="row">
+            <!-- Footer başlangıç-->
+            <div class="col-md-12 footer">
+                <div class="row">
+                    <div class="col-md-3 mavi">
+                        <ul>
+                            <li>Ana Sayfa</li>
+                            <li>Hakkımda</li>
+                            <li>Projelerim</li>
+                            <li>İletişim</li>
+                        </ul>
+                    </div> 
+                    <div class="col-md-3 kirmizi">
+                        <h5>Sosyal Medya</h5>
+                        <ul>
+                            <li>Instagram</li>
+                            <li>WhatsApp</li>
+                            <li>Youtube</li>
+                            <li>X (Twitter)</li>
+                            <li>FaceBook</li>
+                        </ul>
+                    </div> 
+                    <div class="col-md-3 yesil">
+                        <h5>En çok okunan makaleler</h5>
+                        <ul>
+                            <li>Makale 1</li>
+                            <li>Makale 2</li>
+                            <li>Makale 3</li>
+                        </ul>
+                    </div> 
+                    <div class="col-md-3 acikmavi">
+                        <h5>Adres</h5>
+                        ABC Mah. <br>
+                        ABC Cad. <br>
+                        Beylikdüzü İSTANBUL
+                    </div>
+                </div>
+           
+            </div>
+            <!-- Footer bitiş -->
+        </div>
+    </div><!-- container bitiş -->
+
+</body>
+</html>

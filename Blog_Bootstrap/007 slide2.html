@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bağımsız 9/3 Slider</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #111;
+        }
+
+        .row {
+            display: flex;
+            width: 100%;
+            height: 350px;
+        }
+
+        .big-slider,
+        .small-slider {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .big-slider {
+            width: 75%;
+        }
+
+        .small-slider {
+            width: 25%;
+        }
+
+        .wrapper {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .wrapper img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        /* Butonlar */
+        .btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 35px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 6px;
+            user-select: none;
+            z-index: 10;
+        }
+
+        .btn:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        @media(max-width:768px) {
+            .row {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .big-slider,
+            .small-slider {
+                width: 100%;
+                height: 220px;
+            }
+
+            .wrapper img {
+                height: 220px;
+            }
+
+            .btn {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row">
+
+        <!-- SOL SLIDER (9 BİRİM) -->
+        <div class="big-slider">
+            <div class="wrapper" id="bigWrap">
+                <img src="https://picsum.photos/900/600?1">
+                <img src="https://picsum.photos/900/600?2">
+
+            </div>
+
+            <div class="btn prev" onclick="moveBig(-1)">❮</div>
+            <div class="btn next" onclick="moveBig(1)">❯</div>
+        </div>
+
+        <!-- SAĞ SLIDER (3 BİRİM) -->
+        <div class="small-slider">
+            <div class="wrapper" id="smallWrap">
+                <img src="https://picsum.photos/400/600?11">
+                <img src="https://picsum.photos/400/600?12">
+                <img src="https://picsum.photos/400/600?13">
+                <img src="https://picsum.photos/400/600?14">
+            </div>
+
+            <div class="btn prev" onclick="moveSmall(-1)">❮</div>
+            <div class="btn next" onclick="moveSmall(1)">❯</div>
+        </div>
+
+    </div>
+
+    <script>
+        /* ---------------- SOL SLIDER ------------------ */
+        let bigIndex = 0;
+        const bigSlides = document.querySelectorAll("#bigWrap img");
+
+        function moveBig(step) {
+            bigIndex = (bigIndex + step + bigSlides.length) % bigSlides.length;
+            document.getElementById("bigWrap").style.transform =
+                `translateX(-${bigIndex * 100}%)`;
+        }
+
+        // Autoplay (sol slider 3 saniyede bir)
+        setInterval(() => { moveBig(1); }, 3000);
+
+        /* ---------------- SAĞ SLIDER ------------------ */
+        let smallIndex = 0;
+        const smallSlides = document.querySelectorAll("#smallWrap img");
+
+        function moveSmall(step) {
+            smallIndex = (smallIndex + step + smallSlides.length) % smallSlides.length;
+            document.getElementById("smallWrap").style.transform =
+                `translateX(-${smallIndex * 100}%)`;
+        }
+
+        // Autoplay (sağ slider 5 saniyede bir)
+        setInterval(() => { moveSmall(1); }, 5000);
+    </script>
+
+</body>
+
+</html>
