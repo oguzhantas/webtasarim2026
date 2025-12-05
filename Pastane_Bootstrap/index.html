@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastahane </title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <style>
+        #navbar-renk{
+            background-color: #d20000;
+            color:#FFF;
+        }
+        #navbar-renk a{ /*Linklerin biçimlendirilmesi*/
+            color:#FFF;
+        }
+        #navbar-renk .dropdown-menu {
+            background-color: bisque;
+        }
+        #navbar-renk .dropdown-menu .dropdown-item{
+            color:rgb(100, 19, 19);
+        }
+        .navbar-toggler{
+            color:#FFF;
+        }
+        
+        .mavi{background-color: blue; color:#FFF;}
+        .mor{background-color: purple; color:#FFF;}
+        .kirmizi{background-color: #d20000; color:#FFF;}
+        .pembe{background-color: pink; color:black}
+        .gri{background-color:rgb(184, 180, 180); color:#FFF}
+
+        .card{          
+            float:left;
+            /*box-shadow: 5px 5px rgb(94, 91, 91);*/
+        }
+        .accordion-button{
+            background-color: #d20000;
+            color:#FFF;
+        }
+        .banner{
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+        <!-- navbar başlangıç-->
+    <nav class="navbar navbar-expand-lg"  id="navbar-renk">
+        <div class="container-fluid">
+        <!-- Marka logosu yazı veya ikon olabilir-->
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.jpg" width="50" alt="ABC Pastanesi">
+            <!-- ABC Pastanesi-->
+          </a>
+          <!--logo bitiş -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Ana Sayfa-->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Ana Sayfa</a>
+              </li>
+             <!-- Hakkımızda-->
+              <li class="nav-item">
+                <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+              </li>
+
+              <!-- Ürünler -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="urunler.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ürünler
+                </a>
+                <!-- Ürünler aşağı doğru açılan menü içeriği-->
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Yaş Pastalar</a></li>
+                  <li><a class="dropdown-item" href="#">Çikolatalar</a></li>
+                  <li><a class="dropdown-item" href="#">Kuru Pastalar</a></li>
+                  <li><a class="dropdown-item" href="#">Şerbetli Tatlılar</a></li>
+                  <li><a class="dropdown-item" href="#">Sütlü Tatlılar</a></li>
+                </ul>
+              </li>
+              <!-- İletişim -->
+              <li class="nav-item">
+                <a class="nav-link" href="iletisim.html">İletişim</a>
+              </li>
+            </ul>
+            Sipariş Telefon: 0545 333 44 55
+          </div>
+        </div>
+    </nav>
+    <!-- navbar bitiş-->
+
+    <!-- container başlangıç-->
+    <div class="container-fluid">
+
+    <!-- slayt başlangıç -->
+    <div class="row">
+        <div class="col-md-12">
+            <!-- carousel slide başlıyor-->
+            <div id="homeslide" class="carousel slide">
+                <!-- indikatörler -->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#homeslide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#homeslide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#homeslide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#homeslide" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#homeslide" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <!--resimler-->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/slide1.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Başlık #1</h5>
+                      <p>Açıklama 2.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slide3.webp" class="d-block w-100" >
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Başlık #2</h5>
+                      <p>Açıklama 2.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slide3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Başlık #3</h5>
+                      <p>Açıklama 3.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slide2.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Başlık #4</h5>
+                      <p>Açıklama 4.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slide4.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Başlık #5</h5>
+                      <p>Açıklama 5.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- İleri geri tuşları -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#homeslide" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Önceki</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#homeslide" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Sonrak</span>
+                </button>
+            </div>
+            <!--carousel slide bitiş-->
+        </div>
+    </div>
+    <!-- slayt bitiş -->
+    </div><!--container-fluid bitiş-->
+
+    <!-- ürünler content başlangıç-->
+    <div class="row">
+        
+            <div class="col-md-2 pt-3 px-5 pembe">
+                <!--Ürün kategorileri -->
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                          Yaş Pastalar
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            Doğum günü Yaş pastalar
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                          Kuru Pastalar
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Tuzlu ve tatlı kuru pastalar
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                         Şerbetli Tatlılar
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Baklava, sütlü nuriye, soğuk baklava...
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                           Sütlü Tatlılar
+                          </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                          <div class="accordion-body">
+                             Kazandibi, Tavuk göğsü, sütlaç...
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+
+
+                <!--Ürün kategorileri-->
+            </div>
+    
+            <div class="col-md-10 pt-3 gri">
+              
+                <!-- kek1-->
+                 <div class="card text-center col-md-2 m-2 p-1">
+                    <img src="images/kek1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Yaş pasta</h5>
+                      <p class="card-text">Yaş pasta içeriğinde çilek, yaban mersini yer almaktadır</p>
+                      <a href="#" class="btn btn-danger p-2">Hemen Sipariş ver</a>
+                    </div>
+                  </div>
+
+                  <!-- kek2-->
+                  <div class="card text-center col-md-2 m-2 p-1">
+                    <img src="images/kek2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Yaş pasta</h5>
+                      <p class="card-text">Yaş pasta içeriğinde çilek, yaban mersini yer almaktadır</p>
+                      <a href="#" class="btn btn-danger p-2">Hemen Sipariş ver</a>
+                    </div>
+                  </div>
+                  <!-- kek3-->
+                  <div class="card text-center col-md-2 m-2 p-1">
+                    <img src="images/kek3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Yaş pasta</h5>
+                      <p class="card-text">Yaş pasta içeriğinde çilek, yaban mersini yer almaktadır</p>
+                      <a href="#" class="btn btn-danger p-2">Hemen Sipariş ver</a>
+                    </div>
+                  </div>
+                  <!-- kek4-->
+                  <div class="card text-center col-md-2 m-2 p-1">
+                    <img src="images/kek4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Yaş pasta</h5>
+                      <p class="card-text">Yaş pasta içeriğinde çilek, yaban mersini yer almaktadır</p>
+                      <a href="#" class="btn btn-danger p-2">Hemen Sipariş ver</a>
+                    </div>
+                  </div>
+                  <!-- kek5-->
+                  <div class="card text-center col-md-2 m-2 p-1">
+                    <img src="images/kek5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Yaş pasta</h5>
+                      <p class="card-text">Yaş pasta içeriğinde çilek, yaban mersini yer almaktadır</p>
+                      <a href="#" class="btn btn-danger p-2">Hemen Sipariş ver</a>
+                    </div>
+                  </div>
+
+
+                     <!-- kek6-->
+                 <div class="card text-center col-md-2 m-2 p-1">
+                    <img src="images/kek6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Yaş pasta</h5>
+                      <p class="card-text">Yaş pasta içeriğinde çilek, yaban mersini yer almaktadır</p>
+                      <a href="#" class="btn btn-danger p-2">Hemen Sipariş ver</a>
+                    </div>
+                  </div>
+
+                  <!-- kek7-->
+                  <div class="card text-center col-md-2 m-2 p-1">
+                    <img src="images/kek7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Yaş pasta</h5>
+                      <p class="card-text">Yaş pasta içeriğinde çilek, yaban mersini yer almaktadır</p>
+                      <a href="#" class="btn btn-danger p-2">Hemen Sipariş ver</a>
+                    </div>
+                  </div>
+                  <!-- kek8-->
+                  <div class="card text-center col-md-2 m-2 p-1">
+                    <img src="images/kek8.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Yaş pasta</h5>
+                      <p class="card-text">Yaş pasta içeriğinde çilek, yaban mersini yer almaktadır</p>
+                      <a href="#" class="btn btn-danger p-2">Hemen Sipariş ver</a>
+                    </div>
+                  </div>
+                  <!-- kek9-->
+                  <div class="card text-center col-md-2 m-2 p-1">
+                    <img src="images/kek9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Yaş pasta</h5>
+                      <p class="card-text">Yaş pasta içeriğinde çilek, yaban mersini yer almaktadır</p>
+                      <a href="#" class="btn btn-danger p-2">Hemen Sipariş ver</a>
+                    </div>
+                  </div>
+                  <!-- kek10-->
+                  <div class="card text-center col-md-2 m-2 p-1">
+                    <img src="images/kek10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Yaş pasta</h5>
+                      <p class="card-text">Yaş pasta içeriğinde çilek, yaban mersini yer almaktadır</p>
+                      <a href="#" class="btn btn-danger p-2">Hemen Sipariş ver</a>
+                    </div>
+                  </div>
+                  
+          
+
+
+           </div><!-- col-md-9 bitiş -->
+                <!-- Pagination Sayfalama-->
+                <div class="row">
+                    <nav aria-label="...">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item"><a href="#" class="page-link">Önceki</a></li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item active">
+                            <a class="page-link" href="#" aria-current="page">2</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">Sonraki</a></li>
+                        </ul>
+                      </nav>
+                  </div>
+    </div> <!-- row bitiş-->
+    <!-- ürünler content bitiş -->
+
+    <div class="row banner kirmizi">
+            <div class="col-md-3 p-2 mt-5"> 
+                <ul>
+                    <li>Ana Sayfa</li>
+                    <li>Hakkımızda</li>
+                    <li>Ürünler</li>
+                    <li>İletişim</li>
+                </ul>
+            </div><!-- col-md-3 -->
+            <div class="col-md-3 p-2 mt-5"> 
+                <ul>
+                    <li>Ana Sayfa</li>
+                    <li>Hakkımızda</li>
+                    <li>Ürünler</li>
+                    <li>İletişim</li>
+                </ul>
+            </div><!-- col-md-3 -->
+
+    </div>
+
+
+    </div>
+    <!-- container bitiş-->
+</body>
+</html>
