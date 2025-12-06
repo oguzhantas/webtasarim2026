@@ -62,7 +62,9 @@ BOOTSTRAP
 ÖRNEK UYGULAMALAR
 =====================
 - Blog Web Sitesi Ön Tasarım
+  
 - Pastane Web Sitesi Ön Tasarım
+  
   ![Bootstrap ile pastane web sitesi ön tasarımı](https://github.com/oguzhantas/webtasarim2026/blob/main/Pastane_Bootstrap/images/pastane_anasayfa.png)
   
 BAĞLANTILAR
