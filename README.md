@@ -40,7 +40,7 @@ CSS3
 - CSS Z-index Kullanımı
 - CSS ile Media Kullanımı
   
-- BOOTSTRAP
+BOOTSTRAP 
 =========================
 - Bootstrap ile Merhaba
 - Bootstrap Kütüphanelerinin çağrılması, CDN kavramı
@@ -64,6 +64,20 @@ CSS3
 - Blog Web Sitesi Ön Tasarım
 - Pastane Web Sitesi Ön Tasarım
 
-- Dr. Oğuzhan TAŞ (http://oguzhantas.github.io)
+BAĞLANTILAR
+===============
+- Kod yazmak için Sublime Editörü https://www.sublimetext.com/
+- Kod yazmak için https://code.visualstudio.com/
+- Online CSS, HTML, JS kodları yazmak için https://codepen.io/
+
+- Temel HTML Örnekleri https://www.oguzhantas.com/html-egitimi/
+- CSS Örnekleri https://www.oguzhantas.com/css-egitimi/
+- Temel JavaScript Örnekleri https://www.oguzhantas.com/javascript-egitimi/
+- Bootstrap Web Sitesi https://getbootstrap.com/
+- Bootstrap dosyalarını indirmek için https://getbootstrap.com/docs/5.3/getting-started/download/
+- Bootstrap Örnek Tasarımlar https://getbootstrap.com/docs/5.3/examples/
+ 
+
+Dr. Oğuzhan TAŞ (http://oguzhantas.github.io)
   
 
