@@ -29,7 +29,7 @@ CSS3
 - CSS ile Div Kullanımı
 - CSS ile Kutu modeli
 - CSS ile nesneleri hizalama 
-- CSS ile Round kullanarak yuvarlaklaştırma
+- CSS ile Border Kullanımı, Border-Radius kullanarak yuvarlaklaştırma
 - CSS ile Hover Kullanımı
 - CSS ile Margin ve Padding Kavramları
 - CSS ile Link Biçimlendirme
