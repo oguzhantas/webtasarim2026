@@ -61,13 +61,14 @@ BOOTSTRAP
 
 ÖRNEK UYGULAMALAR
 =====================
-- Blog Web Sitesi Ön Tasarım
+
+Blog Web Sitesi Ön Tasarım
   
 ![Bootstrap ile Blog Sitesi Ön Tasarımı](https://github.com/oguzhantas/webtasarim2026/blob/main/Blog_Bootstrap/images/blog_on_tasarim.png)
   
-- Pastane Web Sitesi Ön Tasarım
-  
-  ![Bootstrap ile pastane web sitesi ön tasarımı](https://github.com/oguzhantas/webtasarim2026/blob/main/Pastane_Bootstrap/images/pastane_anasayfa.png)
+Pastane Web Sitesi Ön Tasarım
+ 
+![Bootstrap ile pastane web sitesi ön tasarımı](https://github.com/oguzhantas/webtasarim2026/blob/main/Pastane_Bootstrap/images/pastane_anasayfa.png)
   
 BAĞLANTILAR
 ===============
