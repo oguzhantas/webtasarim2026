@@ -64,6 +64,6 @@ CSS3
 - Blog Web Sitesi Ön Tasarım
 - Pastane Web Sitesi Ön Tasarım
 
-- Dr. Oğuzhan TAŞ (http://www.oguzhantas.github.io)
+- Dr. Oğuzhan TAŞ (http://oguzhantas.github.io)
   
 
